@@ -1,0 +1,19 @@
+{
+  "name": "Missing data-cy attributes detector Google Chrome & Mozilla Firefox extension",
+  "version": "0.1",
+  "description": "Google Chrome & Mozilla Firefox extension to highlight data-cy attributes in interactive elements (input, select, button, etc..).",
+  "content_scripts": [
+    {
+      "css": [
+        "./content/css/styles.css"
+      ],
+      "js": [
+        "./content/js/content.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}

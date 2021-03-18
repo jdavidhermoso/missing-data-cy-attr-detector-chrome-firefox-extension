@@ -1,0 +1,29 @@
+{
+  "name": "Missing ALT images detector Google Chrome & Mozilla Firefox extension",
+  "version": "0.1",
+  "description": "Google Chrome & Mozilla Firefox extension to highlight images missing ALT attribute.",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "main/main.html"
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "./content/css/styles.css"
+      ],
+      "js": [
+        "./content/js/content.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "options_page": "options/options.html",
+  "manifest_version": 2
+}
