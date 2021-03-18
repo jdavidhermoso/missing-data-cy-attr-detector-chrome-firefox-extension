@@ -1,9 +1,0 @@
-body.check__page button:not([data-cy]),
-body.check__page button[data-cy=""],
-body.check__page input:not([data-cy]), body.check__page input[data-cy=""],
-body.check__page select:not([data-cy]), body.check__page select[data-cy=""],
-body.check__page .switch:not([data-cy]), body.check__page .switch[data-cy=""],
-body.check__page .cursor-pointer:not([data-cy]), body.check__page .cursor-pointer[data-cy=""]
-{
-    border: 1px dotted red;
-}
